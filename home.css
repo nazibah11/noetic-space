@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(177, 196, 246);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+container-section{
+    color: bisque;
+    background-color: bisque;
+}
+p{
+    padding-right: 8px;
+}

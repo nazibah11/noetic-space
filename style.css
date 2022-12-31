@@ -1,0 +1,582 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+  height: 120px;
+  background:#0a275b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0rem 2rem;
+  margin-left: 2rem;
+}
+
+.logo-image {
+  width: 35%;
+  height: 10%;
+  margin-top:5rem;
+  margin-left:-6.5rem;
+
+}
+
+.nav-items {
+  font-size: 120%;
+  margin-left: 6rem;
+  margin-top:-3rem;
+
+}
+nav a {
+  text-decoration: none;
+  color: #e7e7e7;
+  padding: 0 1.5rem;
+}
+
+nav a:hover {
+  color: rgb(5, 5, 5);
+}
+
+.hero {
+  background-color:#0a275b;
+ background-repeat: no-repeat;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  height: 95vh;
+  padding: 3rem ;
+  
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgb(235, 244, 249);
+  padding: 0rem 2rem;
+  margin-right: 301 rem;
+  margin-bottom: 7rem;
+}
+
+.column-left h2 {
+  margin-bottom: 1rem;
+  font-size:131%;
+}
+
+.column-left p {
+  margin-bottom: 17rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+button {
+  margin-top:-13rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: #0c0773;
+  background: #f2f2f2;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button:hover {
+  background: rgb(25, 25, 26);
+  color: rgb(231, 231, 231);
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.hero-image {
+  width: 125%;
+  height: 80%;
+  margin-top:-8rem;
+  margin-left:5rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: #e7e7e7;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  padding-bottom:20px;
+  padding-right:-60px;
+  display: none;
+  position: absolute;
+  border: 20px rgb(244, 244, 244);
+  cursor: pointer;
+  border-radius: 0px;
+  
+
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+  background: #323234;
+ 
+
+}
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*************** support.html **************/
+.nav2-items {
+  font-size: 120%;
+  margin-left: 11rem;
+  margin-top:-3rem;
+
+}
+.section-one
+{width: 100%;
+    padding: -90px 100px;
+   
+}
+.section-middle{
+    padding: 20px;
+    width: 1280;
+    margin: 40px auto;
+}
+.section-middle ul{
+    display: flex; 
+    margin-bottom: 8px;
+    margin-left: 200px;
+}
+.section-middle ul li{
+    list-style: none;
+    color: #0c0773;
+    background: whitesmoke;
+    padding: 1rem 3rem;
+    margin:5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.section-middle ul li.active{
+  background:whitesmoke;
+  color:#6b6e70;
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.container2 .pictures{
+  position: relative;
+  width:345px;
+  height: 270px;
+  margin: 31px;
+  
+}
+.queen {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.queen .pictures{
+  position: relative;
+  width:300px;
+  height: 450px;
+  margin: 53px;
+
+}
+.queen1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -27%;
+
+}
+.queen1 .pictures{
+  position:relative;
+  width:300px;
+  height: 600px;
+  margin: 155px;
+  
+}
+.queen2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -34%;
+
+}
+.queen2 .pictures{
+  position: relative;
+  width:238px;
+  height: 270px;
+  margin: 31px;
+  
+}
+
+
+.container2 .pictures img{
+  object-fit:fill;
+  opacity: 1;
+  display:inline-block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding:16px, 30px;
+  margin-top: 143%;
+  width: 200%;
+  margin-left: -50%;
+  
+  
+}
+.text0{
+
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding:16px, 30px;
+  margin-top: 250%;
+  
+  
+}
+
+.text1 {
+  
+ 
+    color: rgb(146, 106, 5);
+    font-size: 17px;
+    padding:30px, 30px;
+    margin-top: 140%;
+  
+  
+}
+.text2 {
+ 
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding:16px, 30px;
+  margin-top: 170%;
+  
+  
+}
+
+.text3{
+
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding:16px, 30px;
+  margin-top: 450%;
+  
+}
+.text4{
+
+  color: rgb(118, 128, 3);
+  font-size: 13px;
+ margin-left: -48%;
+  margin-top: 200%;
+  text-align: center;
+  width: 200%;
+}
+.text5{
+
+  color: rgb(145, 38, 8);
+  font-size: 17px;
+ margin-left: -48%;
+  margin-top: -30%;
+  text-align: center;
+  width: 200%;
+}
+.text6{
+
+  color: rgb(15, 4, 223);
+  font-size: 15px;
+ margin-left: -55%;
+  margin-top: 305%;
+  text-align: center;
+  width: 210%;
+}
+
+
+/************** end of support.html **********/
+/*************** test.html **************/
+
+
+
+/************** end of test.html **********/
+/*************** consultancy.html **************/
+
+.hero2{
+  padding-top: -50px;
+  height: 1000%;
+  width: 100%;
+  background-color:rgb(209, 224, 253);
+  background-repeat:repeat;
+  background-position:static;
+  background-size:cover;
+  position:static;
+ 
+
+
+} 
+
+
+h6{
+  color: #0c0773;
+  margin-top: 2em;
+  font-size:xx-large;
+   text-align:center;
+}
+p{
+  margin-top: 1em;
+  font-size:x-large;
+  text-align:center;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+dt {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  
+}
+
+dd {
+  text-align: center;
+  
+  margin-top: 10px;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding-bottom: 0px;
+}
+.section-middle3{
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+}
+.section-middle3 ul{
+  color: #e7e7e7;
+    display: flex;
+    margin-left: 16em;
+    margin-bottom: 20px;
+}
+.section-middle3 ul li{
+    list-style: none;
+    background: rgb(4, 15, 90);
+    padding: 8px 20px;
+    margin:5px;
+  
+    letter-spacing: 1.4px;
+    cursor: pointer;
+}
+.active .list:hover{
+    background:rgb(255, 255, 255);
+    color:#ffffff;
+}
+
+/************** end of consultancy.html **********/
+
+/*************** query.html **************/
+.logo1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0rem 2rem;
+  margin-left: 2rem;
+}
+
+.logo1-image {
+  width: 25%;
+  height: 10%;
+  margin-top:1rem;
+  margin-left:-2rem;
+
+}
+.nav1-items {
+  font-size: 120%;
+  margin-left: 3rem;
+  margin-top:-3rem;
+
+}
+
+.section-five
+{width: 95%;
+    padding: 100px 0px;
+   
+}
+.section-five .container div{
+    margin: 20px 0;
+    margin-left:-10px;
+}
+.contact-top{
+    text-align: center;
+    
+     
+}
+.contact-top h3{
+  
+    font-size: 35px;
+    margin-right: -110px;
+    margin-top:-70px;
+}
+.contact-top p{
+  font-size: medium;
+    font-weight: 10;
+    width: 90%;
+    margin: 0 auto;
+    margin-right: 10px;
+    margin-top: -1%;
+}
+    
+.form input[type = "text"], .form input[type = "email"], .form textarea{
+    width: 40%;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    margin-left: 150px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #0a275b;
+}
+.contact-bottom .form{
+    margin-left:-20px;
+    margin-top: 50px;
+    
+}
+.send-msg{
+  padding-left: 19rem;
+}
+.query-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.hero1-image {
+  width: 42%;
+  height: 42%;
+  margin-top:-32rem;
+  margin-left:53rem;
+}
+
+/************** end of query.html **********/
+/**************  hotline.html **********/
+.wrapper{
+  margin-top: 2%;
+}
+
+.wrapper h4{
+  background-color: rgb(169, 199, 223);
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-size: 52px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+}
+
+.team .team_member{
+  background: rgb(6, 33, 79);
+  margin: 55px;
+  margin-bottom: 50px;
+  width: 500px;
+  padding: 35px;
+  padding-left: 20px;
+  line-height: 15px;
+  color: white;
+  position: relative;
+}
+
+.team .team_member h3{
+  color: white;
+  font-size: 26px;
+}
+ .phone{
+  color: rgb(230, 222, 222);
+  font-weight: 70;
+  font-style: initial;
+  font-size:107%;
+  text-transform: uppercase;
+  margin: 1px;
+}
+
+.imag1 {
+  margin-top: 0px;
+   margin-bottom: 30px;
+   width: 170px;
+   clip-path:  circle();   
+}
+.imag2 {
+  margin-top: -10px;
+  margin-bottom: 17px;
+  width: 170px;
+  clip-path:  circle(77px);
+  
+      
+}
+.hero3{
+  background-color: #4266a9;
+
+}
+/************** end of hotline.html **********/
